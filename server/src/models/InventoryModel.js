@@ -18,10 +18,6 @@ const schema = new mongoose.Schema({
     type: Number,
     trim: true,
     required: true
-  },
-  lastUpdated: {
-    type: Date,
-    default: Date.now
   }
 })
 
