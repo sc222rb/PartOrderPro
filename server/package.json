@@ -14,8 +14,9 @@
   "author": "Sayaka Chishiki Jakobsson",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.9",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
+    "dotenv": "^16.4.7",
     "express": "^4.21.1",
     "express-http-context": "^1.2.4",
     "helmet": "^8.0.0",
@@ -23,6 +24,7 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "@lnu/eslint-config": "^1.1.10",
     "nodemon": "^3.1.7"
   }
 }
