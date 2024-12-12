@@ -5,6 +5,9 @@ const InventoryList = ({ items }) => {
     return <p>No inventory available.</p>;
   }
 
+  // Sort the items alphabetically by part name
+  const sortedItems = [...items].sort((a, b) => a.name.localeCompare(b.name));
+
   return (
     <table>
       <thead>
@@ -15,7 +18,7 @@ const InventoryList = ({ items }) => {
         </tr>
       </thead>
       <tbody>
-        {items.map((item, index) => (
+        {sortedItems.map((item, index) => (
           <tr key={index}>
             <td>{item.name}</td>
             <td>{item.quantity}</td>
