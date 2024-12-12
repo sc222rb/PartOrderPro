@@ -12,11 +12,16 @@ const schema = new mongoose.Schema({
   name: {
     type: String,
     trim: true,
-    required: true
+    required: true,
+    unique: true
   },
   quantity: {
     type: Number,
     trim: true,
+    required: true
+  },
+  date: {
+    type: Date,
     required: true
   }
 })

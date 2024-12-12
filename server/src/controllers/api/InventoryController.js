@@ -5,6 +5,7 @@
  */
 
 import { InventoryModel } from '../../models/InventoryModel.js'
+import createError from 'http-errors'
 
 /**
  * Encapsulates a controller.
@@ -74,7 +75,8 @@ export class InventoryController {
     try {
       const inventory = new InventoryModel({
         name: req.body.name,
-        quantity: req.body.quantity
+        quantity: req.body.quantity,
+        date: req.body.date
       })
 
       await inventory.save()
@@ -101,7 +103,7 @@ export class InventoryController {
    */
   async update (req, res, next) {
     try {
-      const { name, quantity } = req.body
+      const { name, quantity, date } = req.body
 
       if (name === undefined || quantity === undefined) {
         next(createError(400))
@@ -110,6 +112,7 @@ export class InventoryController {
 
       req.inventory.name = name
       req.inventory.quantity = quantity
+      req.inventory.date = date
 
       await req.inventory.save()
 
