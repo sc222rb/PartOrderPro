@@ -53,7 +53,6 @@ export class PredictController {
     try {
       // Get prediction from BigML using the model ID and the input data
       const prediction = await getPrediction(modelId, inputData)
-      console.log(prediction)
 
       // Assuming 'output' is the key containing the prediction data
       if (prediction && prediction.output) {
