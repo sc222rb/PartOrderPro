@@ -19,7 +19,7 @@ const InventoryList = ({ items }) => {
           <tr key={index}>
             <td>{item.name}</td>
             <td>{item.quantity}</td>
-            <td>{item.date ? new Date(item.date).toLocaleString() : 'No Date'}</td>
+            <td>{item.date ? new Date(item.date).toLocaleDateString('en-US') : 'No Date'}</td>
           </tr>
         ))}
       </tbody>
