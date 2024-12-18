@@ -4,7 +4,7 @@
 
 #### 1. Problem Statement  
 
-Inefficiencies in parts ordering and inventory management in the manufacturing industry are significant factors that reduce productivity. Based on an analysis using Perplexity to grasp the latest industry trends and challenges, the following issues were identified:  
+Inefficiencies in inventory management in the manufacturing industry are significant factors that reduce productivity. Based on an analysis using Perplexity to grasp the latest industry trends and challenges, the following issues were identified:  
 
 - **Complexity in Inventory Management**: Constant changes in inventory levels make management challenging, often leading to overordering or shortages.  
 - **Order Errors Causing Production Delays**: Insufficient inventory forecasting results in order mistakes, increasing the risk of production delays.  
@@ -16,7 +16,7 @@ Inefficiencies in parts ordering and inventory management in the manufacturing i
 The **PartOrderPro** app streamlines parts ordering and inventory management in manufacturing by leveraging **AI for inventory management and forecasting**. Key features include:  
 
 - **AI-Powered Inventory Forecasting**: Prevents overordering and shortages by using AI to predict future inventory needs.  
-- **Simplified Inventory Management**: Provides a user-friendly interface to easily add and manage inventory items.  
+- **Simplified Inventory Management**: Provides a user-friendly interface to easily add inventories.  
 
 #### 3. Tech Stack and Design Overview  
 
@@ -33,7 +33,7 @@ This app allows users to manage inventory data and perform inventory forecasts u
 - **Inventory Forecasting**: Accepts part names, year, and month as input to display AI-predicted inventory levels.  
 - **Inventory Management**: Enables users to add new inventory items.  
 
-Using BigML, 1,000 data samples were uploaded. After researching suitable models for inventory forecasting, the Ensemble model was selected.  
+1,000 data samples were made by ChatGPT. After researching suitable models for inventory forecasting for this project, the Ensemble model was selected.  
 ![BigML Model](img/ensemble.png)  
 On the backend, parameters based on the specified year and month are sent to retrieve forecast data, which is then displayed on the frontend.  
 ![BigML Inventory Forecast](img/bigmlPrediction.png) 
@@ -83,7 +83,7 @@ On the backend, parameters based on the specified year and month are sent to ret
 #### 7. Additional Information  
 
 - **Development Effort**: Building the API, UI, and AI integration took approximately two weeks.  
-- **Challenges**: Due to a lack of advanced mathematical knowledge, it is challenging to evaluate whether the performance metrics provided by BigML are good or poor. Improving prediction accuracy requires not only data collection but also a deeper understanding of model tuning and training.  
+- **Challenges**: Due to a lack of advanced mathematical knowledge, it is challenging to evaluate whether the performance metrics provided by BigML are good or poor. 
 
 #### 8. AI Integration  
 
